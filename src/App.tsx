@@ -13,9 +13,9 @@ import rocketIcon from './assets/cok.png';
 const useCustomRocketIcons = true;
 
 // Import your custom content images
-// import imageSpace1 from './assets/image-space-1.jpg'; // or .gif, .png, etc.
-// import imageSpace2 from './assets/image-space-2.jpg';
-// import imageSpace3 from './assets/image-space-3.jpg';
+import imageSpace1 from './assets/swag.png'; // or .gif, .png, etc.
+import imageSpace2 from './assets/bulge1.png';
+import imageSpace3 from './assets/bulge2.png';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -155,7 +155,7 @@ function App() {
           </h2>
           
           <ContentImage 
-            // imagePath={imageSpace1} 
+            imagePath={imageSpace1} 
             alt="Swagger Overload" 
             aspectRatio="16/9"
           />
@@ -213,7 +213,7 @@ function App() {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex-1">
               <ContentImage 
-                // imagePath={imageSpace2} 
+                imagePath={imageSpace2} 
                 alt="Image Space 2" 
                 aspectRatio="1/1"
               />
@@ -221,7 +221,7 @@ function App() {
             
             <div className="flex-1">
               <ContentImage 
-                // imagePath={imageSpace3} 
+                imagePath={imageSpace3} 
                 alt="Image Space 3" 
                 aspectRatio="1/1"
               />
