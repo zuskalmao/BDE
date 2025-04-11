@@ -7,9 +7,9 @@ import SocialLinks from './components/SocialLinks';
 import CustomIcon from './components/CustomIcon';
 
 // Import your custom rocket icon
-// import rocketIcon from './assets/rocket-icon.png';
+import rocketIcon from './assets/cok.png';
 // Set to true to use custom icons, false to use default Lucide icons
-const useCustomRocketIcons = false;
+const useCustomRocketIcons = true;
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -33,7 +33,7 @@ function App() {
       <div className="rocket-anim-1 fixed z-0 opacity-20" style={{ top: '15%', left: '10%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={100}
           className="text-accent"
         />
@@ -41,7 +41,7 @@ function App() {
       <div className="rocket-anim-2 fixed z-0 opacity-15" style={{ top: '70%', right: '15%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={60}
           className="text-primary"
         />
@@ -49,7 +49,7 @@ function App() {
       <div className="rocket-anim-3 fixed z-0 opacity-10" style={{ top: '40%', right: '5%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={80}
           className="text-secondary"
         />
@@ -57,7 +57,7 @@ function App() {
       <div className="rocket-anim-4 fixed z-0 opacity-20" style={{ bottom: '20%', left: '20%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={50}
           className="text-accent"
         />
@@ -65,7 +65,7 @@ function App() {
       <div className="rocket-anim-5 fixed z-0 opacity-15" style={{ top: '30%', left: '30%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={120}
           className="text-primary"
         />
@@ -73,7 +73,7 @@ function App() {
       <div className="rocket-small-1 fixed z-0 opacity-10" style={{ bottom: '10%', right: '25%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={30}
           className="text-white"
         />
@@ -81,7 +81,7 @@ function App() {
       <div className="rocket-small-2 fixed z-0 opacity-10" style={{ top: '55%', left: '5%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={25}
           className="text-accent"
         />
@@ -89,7 +89,7 @@ function App() {
       <div className="rocket-small-3 fixed z-0 opacity-10" style={{ top: '85%', right: '35%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={20}
           className="text-primary"
         />
