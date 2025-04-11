@@ -8,9 +8,9 @@ import CustomIcon from './components/CustomIcon';
 import ContentImage from './components/ContentImage';
 
 // Import your custom rocket icon
-// import rocketIcon from './assets/rocket-icon.png';
+import rocketIcon from './assets/cok.png';
 // Set to true to use custom icons, false to use default Lucide icons
-const useCustomRocketIcons = false;
+const useCustomRocketIcons = true;
 
 // Import your custom content images
 // import imageSpace1 from './assets/image-space-1.jpg'; // or .gif, .png, etc.
@@ -39,7 +39,7 @@ function App() {
       <div className="rocket-anim-1 fixed z-0 opacity-20" style={{ top: '15%', left: '10%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={100}
           className="text-accent"
         />
@@ -47,7 +47,7 @@ function App() {
       <div className="rocket-anim-2 fixed z-0 opacity-15" style={{ top: '70%', right: '15%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={60}
           className="text-primary"
         />
@@ -55,7 +55,7 @@ function App() {
       <div className="rocket-anim-3 fixed z-0 opacity-10" style={{ top: '40%', right: '5%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={80}
           className="text-secondary"
         />
@@ -63,7 +63,7 @@ function App() {
       <div className="rocket-anim-4 fixed z-0 opacity-20" style={{ bottom: '20%', left: '20%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={50}
           className="text-accent"
         />
@@ -71,7 +71,7 @@ function App() {
       <div className="rocket-anim-5 fixed z-0 opacity-15" style={{ top: '30%', left: '30%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={120}
           className="text-primary"
         />
@@ -79,7 +79,7 @@ function App() {
       <div className="rocket-small-1 fixed z-0 opacity-10" style={{ bottom: '10%', right: '25%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={30}
           className="text-white"
         />
@@ -87,7 +87,7 @@ function App() {
       <div className="rocket-small-2 fixed z-0 opacity-10" style={{ top: '55%', left: '5%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={25}
           className="text-accent"
         />
@@ -95,7 +95,7 @@ function App() {
       <div className="rocket-small-3 fixed z-0 opacity-10" style={{ top: '85%', right: '35%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={20}
           className="text-primary"
         />
@@ -122,7 +122,7 @@ function App() {
           
           <div className="mb-12 max-w-3xl mx-auto">
             <p className="text-xl mb-8 text-gray-300">
-              Not compensating for <i>anything</i>. $BDE is the memecoin with the swagger, 
+              Not compensating for <i>anything</i>. $BDE is the memecoin with bulge, 
               confidence, and <span className="text-accent font-bold">absolute MAGNITUDE</span> to 
               dominate the Solana ecosystem.
             </p>
@@ -258,7 +258,7 @@ function App() {
       <SocialLinks />
       
       <footer className="py-8 px-4 text-center text-gray-500 border-t border-gray-800">
-        <p>© 2023 Big Dick Energy ($BDE) — The Mightiest Memecoin in the Solana Ecosystem</p>
+        <p>© 2025 Big Dick Energy ($BDE) — The Mightiest Memecoin in the Solana Ecosystem</p>
       </footer>
     </div>
   );
