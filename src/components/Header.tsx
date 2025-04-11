@@ -3,9 +3,9 @@ import { Eye } from 'lucide-react';
 import CustomIcon from './CustomIcon';
 
 // Import your custom eye icon
-import eyeIcon from '../assets/cok.png';
+// import eyeIcon from '../assets/eye-icon.png';
 // Set to true to use custom icon, false to use default Lucide icon
-const useCustomEyeIcon = true;
+const useCustomEyeIcon = false;
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <CustomIcon 
             iconComponent={<Eye />}
-            imagePath={useCustomEyeIcon ? eyeIcon : undefined}
+            // imagePath={useCustomEyeIcon ? eyeIcon : undefined}
             size={32}
             className="text-primary mr-2"
           />

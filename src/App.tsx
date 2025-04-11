@@ -5,11 +5,17 @@ import BulgeCard from './components/BulgeCard';
 import BuyCTA from './components/BuyCTA';
 import SocialLinks from './components/SocialLinks';
 import CustomIcon from './components/CustomIcon';
+import ContentImage from './components/ContentImage';
 
 // Import your custom rocket icon
-import rocketIcon from './assets/cok.png';
+// import rocketIcon from './assets/rocket-icon.png';
 // Set to true to use custom icons, false to use default Lucide icons
-const useCustomRocketIcons = true;
+const useCustomRocketIcons = false;
+
+// Import your custom content images
+// import imageSpace1 from './assets/image-space-1.jpg'; // or .gif, .png, etc.
+// import imageSpace2 from './assets/image-space-2.jpg';
+// import imageSpace3 from './assets/image-space-3.jpg';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -33,7 +39,7 @@ function App() {
       <div className="rocket-anim-1 fixed z-0 opacity-20" style={{ top: '15%', left: '10%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={100}
           className="text-accent"
         />
@@ -41,7 +47,7 @@ function App() {
       <div className="rocket-anim-2 fixed z-0 opacity-15" style={{ top: '70%', right: '15%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={60}
           className="text-primary"
         />
@@ -49,7 +55,7 @@ function App() {
       <div className="rocket-anim-3 fixed z-0 opacity-10" style={{ top: '40%', right: '5%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={80}
           className="text-secondary"
         />
@@ -57,7 +63,7 @@ function App() {
       <div className="rocket-anim-4 fixed z-0 opacity-20" style={{ bottom: '20%', left: '20%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={50}
           className="text-accent"
         />
@@ -65,7 +71,7 @@ function App() {
       <div className="rocket-anim-5 fixed z-0 opacity-15" style={{ top: '30%', left: '30%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={120}
           className="text-primary"
         />
@@ -73,7 +79,7 @@ function App() {
       <div className="rocket-small-1 fixed z-0 opacity-10" style={{ bottom: '10%', right: '25%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={30}
           className="text-white"
         />
@@ -81,7 +87,7 @@ function App() {
       <div className="rocket-small-2 fixed z-0 opacity-10" style={{ top: '55%', left: '5%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={25}
           className="text-accent"
         />
@@ -89,7 +95,7 @@ function App() {
       <div className="rocket-small-3 fixed z-0 opacity-10" style={{ top: '85%', right: '35%' }}>
         <CustomIcon 
           iconComponent={<Rocket />}
-          imagePath={useCustomRocketIcons ? rocketIcon : undefined}
+          // imagePath={useCustomRocketIcons ? rocketIcon : undefined}
           size={20}
           className="text-primary"
         />
@@ -148,15 +154,13 @@ function App() {
             Swagger <span className="text-accent">Overload</span>
           </h2>
           
-          <div className="w-full aspect-[16/9] bg-gray-800/40 rounded-3xl backdrop-blur-sm flex items-center justify-center mb-8 overflow-hidden">
-            <div className="text-gray-400 text-xl">
-              <Sparkles className="mx-auto mb-4" size={48} />
-              <p>Image Space 1</p>
-              <p className="text-sm">(Add your GIF/image here)</p>
-            </div>
-          </div>
+          <ContentImage 
+            // imagePath={imageSpace1} 
+            alt="Swagger Overload" 
+            aspectRatio="16/9"
+          />
           
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mt-8">
             When you hold $BDE, people can <i>sense</i> it. You walk differently. 
             You enter rooms with an aura that makes everyone stop and stare.
             It's not about what you have, it's about how you <span className="text-accent font-bold">carry</span> yourself.
@@ -199,7 +203,7 @@ function App() {
         </div>
       </section>
       
-      {/* Image Space 2 */}
+      {/* Image Space 2 & 3 */}
       <section className="py-20 px-4 relative">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-16 font-orbitron">
@@ -207,20 +211,20 @@ function App() {
           </h2>
           
           <div className="flex flex-col md:flex-row gap-8">
-            <div className="flex-1 aspect-square bg-gray-800/40 rounded-3xl backdrop-blur-sm flex items-center justify-center overflow-hidden">
-              <div className="text-gray-400 text-xl">
-                <Sparkles className="mx-auto mb-4" size={48} />
-                <p>Image Space 2</p>
-                <p className="text-sm">(Add your GIF/image here)</p>
-              </div>
+            <div className="flex-1">
+              <ContentImage 
+                // imagePath={imageSpace2} 
+                alt="Image Space 2" 
+                aspectRatio="1/1"
+              />
             </div>
             
-            <div className="flex-1 aspect-square bg-gray-800/40 rounded-3xl backdrop-blur-sm flex items-center justify-center overflow-hidden">
-              <div className="text-gray-400 text-xl">
-                <Sparkles className="mx-auto mb-4" size={48} />
-                <p>Image Space 3</p>
-                <p className="text-sm">(Add your GIF/image here)</p>
-              </div>
+            <div className="flex-1">
+              <ContentImage 
+                // imagePath={imageSpace3} 
+                alt="Image Space 3" 
+                aspectRatio="1/1"
+              />
             </div>
           </div>
           
