@@ -5,7 +5,7 @@ import CustomIcon from './CustomIcon';
 // Import your custom eye icon
 import eyeIcon from '../assets/cok.png';
 // Set to true to use custom icon, false to use default Lucide icon
-const useCustomEyeIcon = false;
+const useCustomEyeIcon = true;
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
