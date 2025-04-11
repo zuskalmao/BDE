@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Eye } from 'lucide-react';
+import CustomIcon from './CustomIcon';
+
+// Import your custom eye icon
+// import eyeIcon from '../assets/eye-icon.png';
+// Set to true to use custom icon, false to use default Lucide icon
+const useCustomEyeIcon = false;
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,7 +29,12 @@ const Header: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <Eye className="text-primary mr-2" size={32} />
+          <CustomIcon 
+            iconComponent={<Eye />}
+            // imagePath={useCustomEyeIcon ? eyeIcon : undefined}
+            size={32}
+            className="text-primary mr-2"
+          />
           <span className="font-orbitron text-xl font-bold gradient-text">$BDE</span>
         </div>
         
